@@ -1,0 +1,46 @@
+.admin-dashboard-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.admin-header .section-title {
+    margin: 0;
+}
+
+.btn-add-product {
+    background: #000000;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-add-product:hover {
+    background: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+.admin-product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+.no-products {
+    font-size: 18px;
+    color: #6b7280;
+    text-align: center;
+    width: 100%;
+}

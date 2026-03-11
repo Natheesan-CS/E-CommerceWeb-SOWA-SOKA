@@ -1,0 +1,72 @@
+.hero-management {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero-management h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.edit-hero-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.edit-hero-form label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.edit-hero-form input[type="text"],
+.edit-hero-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: 0.2s border-color;
+}
+
+.edit-hero-form input:focus,
+.edit-hero-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.edit-hero-form button[type="submit"] {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-hero-form button[type="submit"]:hover {
+    background-color: #1e40af;
+}
+
+.edit-hero-form button[type="submit"]:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.file-input {
+    border: 1px dashed #d1d5db;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    width: 100%;
+}

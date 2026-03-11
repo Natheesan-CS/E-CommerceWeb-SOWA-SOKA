@@ -1,0 +1,154 @@
+.category-management {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.category-management h2 {
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+.admin-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.admin-form-section h3,
+.admin-list-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #374151;
+}
+
+.add-category-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #f9fafb;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+.add-category-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.add-category-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.add-category-form input,
+.add-category-form select,
+.add-category-form textarea {
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.add-category-form small {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+.add-category-form button[type="submit"] {
+    background: #000000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.add-category-form button[type="submit"]:hover {
+    background: var(--color-secondary);
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.admin-cat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.admin-cat-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.admin-cat-info {
+    flex: 1;
+}
+
+.admin-cat-info strong {
+    display: block;
+    font-size: 16px;
+    color: #000000;
+}
+
+.admin-cat-info p {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 4px 0 0;
+}
+
+.parent-badge {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.del-btn {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.del-btn:hover {
+    background: #fca5a5;
+    color: #7f1d1d;
+}
+
+@media (max-width: 900px) {
+    .admin-grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
